@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>2 cars</title>
+    <link rel="stylesheet" href="includes/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+       
+        
+    <div id="gamecontrolright"><img class ="arrowskeys" src="images/arrowKeysright.png" alt="gamecontrol"></div>
+    <div id="gamecontrolleft"><img class ="arrowskeys" src="images/arrowKeysleft.png" alt="gamecontrol"></div>
+         <div class="car_list">
+               
+               <img id="formula1" class="mySlides glow-button2" src="images/Formula1red.png" alt="red" width="100" height="200" style="box-shadow:#130104c7;">
+               <img id="formula2" class="mySlides glow-button2" src="images/Formula1blue.png" alt="blue" width="100" height="200" style="box-shadow:  #021924c7"><br>
+               <img id="race1" class="mySlides glow-button2" src="images/red2.png" alt="red" width="100" height="200">
+               <img id="race2" class="mySlides glow-button2" src="images/blue2.png" alt="blue" width="100" height="200">
+               <input type="button"  id="leftarr" class="glow-button" value="&#10094;" >
+               <input type="button"  id="rightarr" class="glow-button" value="&#10095;" >
+               <div id="car_details"></div>
+               
+               <div class='rating-stars text-center'>
+                <ul id='stars'>
+                  <li class='star' title='Poor' data-value='1'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Fair' data-value='2'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Good' data-value='3'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Excellent' data-value='4'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='WOW!!!' data-value='5'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                </ul>
+              </div>
+            </div> 
+
+          
+              
+    <div id="container" >
+        <div id= "helpdiv">
+                       
+                <img src="images/help.jpg" id="help" alt="help" ><br>
+                <img  id="helpskip" src="images/helpskip.jpg"   >
+                
+              
+        </div>
+          
+        <div id="score_div" >
+                               <span id="inner_score" >0</span>
+         </div> 
+         <div  class="pause glow-button" id ="pause">
+                        <div  id="pauseline1"   ></div>
+                        <div  id="pauseline2"   ></div>                      
+         </div>
+            <div id="start_div" style="display:none;">
+                    <div style="margin-top:10%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size:80px; color:whitesmoke;">2 CARS</div>
+                    <img  id="start" src="images/startbutton.png" class="start glow-button"  ><br><br>
+                    <img  id="mute_btn0"  class ="mute glow-button" src="images/mute.png" >
+                    <img  id="mute_music0" class="mute glow-button" src="images/mute_music.png"  >
+        
+                            
+                            
+                    
+             </div>
+            
+            <div id="circle_r" class="obstacle">
+                    <div class="child_circle">
+                        <div class="subchild_circle"></div>
+                    </div>
+            </div>
+            
+            <div id="rect_r" class="obstacle">
+                    <div class="child_rect">
+                        <div class="subchild_rect"></div>
+                    </div>
+            </div>
+            <div id="circle_l" class="obstacle">
+                    <div class="child_circle">
+                        <div class="subchild_circle"></div>
+                    </div>
+            </div>
+            
+            <div id="rect_l" class="obstacle">
+                    <div class="child_rect">
+                        <div class="subchild_rect"></div>
+                    </div>
+            </div>
+        <div id="line_r" class="sideline" ></div>
+        <div id="line_l" class="sideline" ></div>    
+        <div id="line_1" class="line" ></div>
+        <div id="line_2" class="line" ></div>
+        <div id="line_3" class="line" ></div>
+        <div id="formula_selected_l" class="formula">
+                        <img id="copyformula1" src="images/Formula1red.png" width="35" height="50"  >
+        </div>
+        <div id="formula_selected_r" class="formula">
+                        <img id="copyformula2" src="images/Formula1blue.png" width="35" height="50"  >
+        </div>
+        <div id="honda_selected_l" class="formula">
+                        <img id="copyformula3" src="images/red2.png" width="35" height="50"  >
+        </div>
+        <div id="honda_selected_r" class="formula">
+                        <img id="copyformula4" src="images/blue2.png" width="35" height="50"  >
+        </div>
+        
+        <div id="car1" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+            <div class="exhaust"></div>
+            
+        </div>
+        <div id="car2" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+            <div class="exhaust" style="background-color:rgba(238, 232, 232, 0.705);box-shadow: 5px 10px #e7e2e2c7,2px 3px #ece3e3c7,10px 15px #eee9e9c7,10px 30px #e9e4e5c7;"></div>
+        </div>
+        <div id="car_1" class="car">
+                <div class="f_glass"></div>
+                <div class="b_glass"></div>
+                <div class="f_light_l"></div>
+                <div class="f_light_r"></div>
+                <div class="f_tyre_l"></div>
+                <div class="f_tyre_r"></div>
+                <div class="b_tyre_l"></div>
+                <div class="b_tyre_r"></div>
+        </div>
+        <div id="car_2" class="car">
+                <div class="f_glass"></div>
+                <div class="b_glass"></div>
+                <div class="f_light_l"></div>
+                <div class="f_light_r"></div>
+                <div class="f_tyre_l"></div>
+                <div class="f_tyre_r"></div>
+                <div class="b_tyre_l"></div>
+                <div class="b_tyre_r"></div>
+        </div>
+        <div id="car_3" class="car">
+                <div class="f_glass"></div>
+                <div class="b_glass"></div>
+                <div class="f_light_l"></div>
+                <div class="f_light_r"></div>
+                <div class="f_tyre_l"></div>
+                <div class="f_tyre_r"></div>
+                <div class="b_tyre_l"></div>
+                <div class="b_tyre_r"></div>
+        </div>
+        <div id="restart_div">
+                <div>Game over</div>
+                <div style="font-size:20px; padding-top:10%;">SCORE:  &#160;&#160;<span id="score_show" style="font-size:15px;"></span></div> 
+                <div style="font-size:20px;">BEST :  &#160;&#160;<span id="best_score_show" style="font-size:15px;"></span></div> 
+                <img  id="restart" src="images/restartbutton.png" class="start glow-button"  ><br>
+                <img  id="mute_btn1"  class ="mute glow-button" src="images/mute.png" >
+                <img  id="mute_music1" class="mute glow-button" src="images/mute_music.png"  >
+        </div>
+
+
+
+        
+    </div>
+
+    <audio   id="speedsound"  loop>
+            <source src="audio/speedsound.mp3" type="audio/mp3" >
+    </audio>
+
+    <audio   id="crashsound"  >
+            <source src="audio/carcrash.mp3" type="audio/mp3" >
+    </audio>
+
+    <audio   id="back_sound" volume='0.2' autoplay loop >
+                <source src="audio/jewels_track.mp3" type="audio/mp3" >
+        </audio>
+    
+       
+
+
+    <script src="includes/jquery.min.js"></script>
+    
+    <script src="includes/script.js"></script>
+</body>
